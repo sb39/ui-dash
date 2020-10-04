@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Container } from 'react-bootstrap';
-// import StepsProgress from './StepsProgress';
+import StepsProgress from './StepsProgress';
 import DataBox from './DataBox';
 const Main = (props) => {
   return (
@@ -13,9 +13,9 @@ const Main = (props) => {
           <Button variant="danger">Close Job</Button>
         </Col>
       </Row>
-      {/* <Row>
-          <StepsProgress />
-        </Row> */}
+      <Row>
+        <StepsProgress />
+      </Row>
       <Container>
         <DataBox
           MainData={props.TotalData}
